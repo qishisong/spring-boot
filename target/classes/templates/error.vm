@@ -1,0 +1,7 @@
+<html>
+<body>
+    1.当访问的静态资源名称相同时，优先级为：META-INF/resource>resources>static>public </br>
+    2.自定义静态目录，与默认静态mul相同时，会覆盖系统配置，可以多次使用addResourceLocations添加目录，优先级先添加的高于后添加的
+    3.webjar就是将js,css等资源文件放到classpath:/META-INF/resources/webjars/中，然后打包称jar发布到maven仓库中
+</body>
+</html>
