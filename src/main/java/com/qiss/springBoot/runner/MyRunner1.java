@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * Created by qiss on 2017/6/22.
  */
-@Component
+//@Component
 @Order(value=2)
 public class MyRunner1 implements CommandLineRunner {
     @Override

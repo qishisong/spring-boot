@@ -1,5 +1,7 @@
 package com.qiss.springBoot.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,9 +16,14 @@ import java.util.Date;
 @RequestMapping("/my")
 public class MyController {
 
+    private static final Logger logger = LoggerFactory.getLogger(MyController.class);
+
     @RequestMapping("/test1")
     @ResponseBody
     public String test1(){
+        logger.debug("日志级别 debug");
+        logger.info("日志级别 info");
+        logger.error("日志级别 error");
         return "myTest1";
     }
 
